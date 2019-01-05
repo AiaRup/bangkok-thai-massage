@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar';
+import About from './components/about';
+import Treatments from './components/treatments';
+import Contact from './components/contact';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path="/Treatments" component={Treatments} />
+            <Route exact path="/About" component={About} />
+            <Route exact path="/Contact" component={Contact} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
 
 export default App;
+
+//TODO:  fix active navlink, fix navbar fixed, fix navbar collapse
