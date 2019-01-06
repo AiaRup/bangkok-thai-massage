@@ -1,14 +1,14 @@
-import oilImage from './images/oil-image.jpg';
-import footImage from './images/foot-image.jpg';
-import stonesImage from './images/stones-image.jpg';
-import backImage from './images/back-image.jpg';
+import oilImage from '../images/oil-image.jpg';
+import footImage from '../images/foot-image.jpg';
+import stonesImage from '../images/stones-image.jpg';
+import backImage from '../images/back-image.jpg';
 
 export const treatments = [
   {
     enName: 'Oil / Thai Massage',
     heName: 'עיסוי שמנים/ עיסוי תאילנדי מסורתי',
     treatData:
-      'העיסוי התאילנדי כולל מתיחות ולחיצות ברקמות השונות ונועד בעיקר לאנשים שמרגישים שהגוף שלהם תפוס או זקוק למתיחות ושחרור השרירים באיזורים שונים בגוף, או למי שיש כאבים שונים. עיסוי שמנים נועד לשחרור הגוף והרפייתו, הוא יותר עדין מהעיסוי התאילנדי ונועד לאנשים שרוצים להירגע. ניתן לבקש עיסוי משולב עם אלמנטים   שונים מהעיסוי התאילנדי ועיסוי השמנים ',
+      'העיסוי התאילנדי כולל מתיחות ולחיצות ברקמות השונות ונועד בעיקר לאנשים שמרגישים שהגוף שלהם תפוס, זקוק למתיחות/שחרור השרירים באיזורים שונים בגוף או למי שסובל מכאבים שונים. עיסוי שמנים נועד לשחרור הגוף והרפייתו, הוא יותר עדין מהעיסוי התאילנדי ונועד לאנשים שרוצים להירגע. ניתן לבקש עיסוי משולב עם אלמנטים   שונים מהעיסוי התאילנדי ועיסוי השמנים ',
     prices: [
       { min: '50 min', price: '220' },
       { min: '60 min', price: '250' },

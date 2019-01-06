@@ -1,43 +1,62 @@
 import React, { Component } from 'react';
-import { UncontrolledCarousel } from 'reactstrap';
-import background from '../images/header-image.jpg';
-import staff from '../images/staff-image.jpg';
-import bed from '../images/bed-image.jpg';
-import Map from './map';
+import BackgroudLogo from '../images/logo-bm.jpg';
+import Navbar from './navbar';
+import Footer from './footer';
 
-const items = [
-  {
-    src: background,
-    altText: 'Slide 1',
-    caption: 'Slide 1',
-    header: 'Slide 1 Header'
-  },
-  {
-    src: staff,
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    header: 'Slide 2 Header'
-  },
-  {
-    src: bed,
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    header: 'Slide 3 Header'
-  }
-];
+const styles = {
+  background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('${BackgroudLogo}')`,
+  backgroundSize: 'contain',
+  backgroundRepeat: 'no-repeat, no-repeat',
+  backgroundPosition: 'center, right 30% bottom 45%'
+};
 
 class About extends Component {
   render() {
     return (
-      <div className="container">
-        <Map
-          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
-          loadingElement={<div style={{ height: '100%' }} />}
-          containerElement={<div style={{ height: '400px' }} />}
-          mapElement={<div style={{ height: '100%' }} />}
-        />
-        <UncontrolledCarousel items={items} />
-      </div>
+      <section className="content-about">
+        <header className="header" style={styles}>
+          <Navbar transperant />
+        </header>
+        <content>
+          <div className="data-about">
+            <div className="container py-3">
+              <h1 className="section-header english line-on-sides">
+                About Us | <span>אודותינו</span>
+              </h1>
+              <div dir="rtl">
+                בנגקוק תאי מסאז' הינו המקום המושלם להירגע ולהתפנק.
+                <br />
+                צוות המעסים שלנו מורכב כולו מתאילנדים מקצועיים, שהוסמכו בתאילנד
+                ועבדו שם ובישראל שנים רבות.
+                <br />
+                אתם מוזמנים להגיע ולהנות מהניסיון העשיר שלהם ולחוות עיסוי יוצא
+                דופן באיכותו.
+                <br />
+                הטיפולים המקצועיים שלנו כוללים:
+                <div className="row py-3">
+                  <div className="col-lg-6">
+                    <p>עיסוי תאילנדי מסורתי</p>
+                    <p>עיסוי שמנים</p>
+                    <p>עיסוי משולב</p>
+                  </div>
+                  <div className="col-lg-6">
+                    <p>עיסוי כפות רגליים</p>
+                    <p>עיסוי גב | צוואר | כתפיים</p>
+                    <p>עיסוי אבנים חמות וצמחי מרפא</p>
+                  </div>
+                </div>
+                <br />
+                אז למה אתם מחכים? התקשרו עכשיו!
+                <a className="tel-number" href="tel:+9723-7448862">
+                  03-7448862
+                </a>
+              </div>
+            </div>
+          </div>
+        </content>
+        <Footer />
+      </section>
     );
   }
 }

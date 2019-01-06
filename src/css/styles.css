@@ -2,9 +2,19 @@
 
 /* GENERAL */
 
-body {
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body,
+#root,
+.App {
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
   background-color: #fafafa;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
 }
 
 .english {
@@ -13,18 +23,138 @@ body {
 
 .App {
   text-align: center;
+  background-color: #fafafa;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section > div {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Copy rights */
+
+.copyRights {
+  padding: 0 50px;
+  line-height: 60px;
+  background-color: #000;
+  color: #9d9d9d;
+  font-size: 13px;
+  text-align: center;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* about */
+
+.header {
+  width: 100%;
+  height: 70vh;
+}
+
+.content-about {
+  background-color: #01095c;
+}
+
+.data-about {
+  background-color: #fafafa;
+  min-height: 300px;
+}
+.data-about div {
+  color: #8c8c8c;
+  /* margin: 30px auto 0; */
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.tel-number {
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: #b99769;
+  color: #fafafa;
+  text-align: center;
+  padding: 10px;
+  border: #b99769 2px solid;
+}
+
+.tel-number:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+  border: #b99769 2px solid;
+  color: #b99769;
+  text-decoration: none;
+}
+
+.data-about .container .row p {
+  color: #b99769;
+  font-weight: bold;
+}
+
+.about-footer {
+  background: #111;
+  color: #666666;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  padding: 90px 60px;
+  font-size: 18px;
+}
+
+.about-footer h3 {
+  font-size: 2rem;
+  color: #bcbdae;
+  margin-bottom: 20px;
+}
+
+.footer-icon a {
+  display: block;
+  color: #111;
+  line-height: 40px;
+  height: 40px;
+}
+
+.footer-icon {
+  background-color: #9d9d9d;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 40px;
+}
+
+.about-footer a:hover {
+  text-decoration: none;
+  color: #d1cccc;
 }
 
 /* Navbar */
 
-.bg-light {
-  background-color: #01095c !important;
+.navbar {
+  padding: 1rem 1rem;
+  width: 100%;
   color: white !important;
-  box-shadow: -1px 1px 3px grey;
+  z-index: 999;
 }
 
-.navbar {
-  padding: 0 1rem;
+.navbar.transperant {
+  background-color: transparent;
+}
+
+.navbar.black-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
 }
 
 .nav-link,
@@ -189,6 +319,9 @@ body {
 
 /* Contact */
 
+#contact > .container-fluid > .row {
+  min-height: 100vh;
+}
 .contact-heading {
   color: #b99769;
   font-size: 25px;
@@ -196,15 +329,15 @@ body {
 }
 
 .contact-data {
+  background: #111;
+  color: #666666;
   font-size: 18px;
-  color: #000;
-  font-weight: bold;
+  padding: 70px 0;
 }
 
-.contact-icon {
-  font-size: 50px;
-  margin-bottom: 15px;
-  color: #01095c;
+#contact p > i {
+  font-size: 16px;
+  color: #bcbdae;
 }
 
 /* about */

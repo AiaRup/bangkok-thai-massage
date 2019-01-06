@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-
+import Navbar from './navbar';
 import Treatment from './treatment';
-import { treatments } from '../treatmentsData';
+import { treatments } from '../utils/treatmentsData';
 
 class Treatments extends Component {
   render() {
     return (
       <section id="treatments">
-        <div className="container py-3">
+        <Navbar transperant={false} />
+
+        <div className="container px-3">
           <h1 className="section-header english line-on-sides">
             Our Treatments | <span>הטיפולים שלנו</span>
           </h1>
