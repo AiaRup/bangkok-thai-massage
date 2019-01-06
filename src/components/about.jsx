@@ -3,15 +3,7 @@ import { UncontrolledCarousel } from 'reactstrap';
 import background from '../images/header-image.jpg';
 import staff from '../images/staff-image.jpg';
 import bed from '../images/bed-image.jpg';
-
-// const styles = {
-//   backgroundImage: `url(${Background})`,
-//   backgroundRepeat: 'no-repeat',
-//   backgroundColor: '#cccccc',
-//   height: '500px',
-//   backgroundPosition: 'center',
-//   backgroundSize: 'cover'
-// };
+import Map from './map';
 
 const items = [
   {
@@ -36,9 +28,14 @@ const items = [
 
 class About extends Component {
   render() {
-    // return <section id="about" style={styles} />;
     return (
-      <div className="container mt-3">
+      <div className="container">
+        <Map
+          googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
+          loadingElement={<div style={{ height: '100%' }} />}
+          containerElement={<div style={{ height: '400px' }} />}
+          mapElement={<div style={{ height: '100%' }} />}
+        />
         <UncontrolledCarousel items={items} />
       </div>
     );
