@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Map from './map';
 
 class Contact extends Component {
   render() {
@@ -10,21 +11,6 @@ class Contact extends Component {
         <div className="row">
           <div className="col-lg-8">
             <div className="row">
-              <div className="col-lg-3">
-                <i
-                  className="fa fa-map-marker contact-icon"
-                  aria-hidden="true"
-                />
-                <h2 className="contact-heading" dir="rtl">
-                  כתובת:
-                </h2>
-                <p className="contact-data" dir="rtl">
-                  פינסקר 61, תל אביב (דקה הליכה מכיכר דיזינגוף)
-                </p>
-                <p className="contact-data english">
-                  61 Pinsker St. Tel-Aviv (1 min walk from Dizengoff square)
-                </p>
-              </div>
               <div className="col-lg-3">
                 <i className="fa fa-phone contact-icon" aria-hidden="true" />
                 <h2 className="contact-heading" dir="rtl">
@@ -50,9 +36,31 @@ class Contact extends Component {
                 </p>
                 <p className="contact-data"> 12:00 - 21:00</p>
               </div>
+              <div className="col-lg-3">
+                <i
+                  className="fa fa-map-marker contact-icon"
+                  aria-hidden="true"
+                />
+                <h2 className="contact-heading" dir="rtl">
+                  כתובת:
+                </h2>
+                <p className="contact-data" dir="rtl">
+                  פינסקר 61, תל אביב (דקה הליכה מכיכר דיזינגוף)
+                </p>
+                <p className="contact-data english">
+                  61 Pinsker St. Tel-Aviv (1 min walk from Dizengoff square)
+                </p>
+              </div>
             </div>
           </div>
-          <div className="col-lg-4" />
+          <div className="col-lg-4">
+            <Map
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
+              loadingElement={<div style={{ height: '100%' }} />}
+              containerElement={<div style={{ height: '400px' }} />}
+              mapElement={<div style={{ height: '100%' }} />}
+            />
+          </div>
         </div>
       </section>
     );
