@@ -51,7 +51,7 @@ const Navbar = ({ transperant }) => {
               className="nav-link"
               activeClassName="activeLink"
               to="/About">
-              אודות
+              אודותינו
             </NavLink>
           </li>
         </ul>

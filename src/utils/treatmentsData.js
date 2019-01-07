@@ -31,7 +31,7 @@ export const treatments = [
     image: footImage
   },
   {
-    enName: 'Neck & Sholders & Back',
+    enName: 'Neck | Sholders | Back',
     heName: 'עיסוי גב | כתפיים | צוואר',
     treatData:
       'עיסוי משולב המתרכז באיזור הגוף העליון- גב, כתפיים וצוואר. מיועד לאנשים שיושבים הרבה במסגרת עבודתם או לאנשים עם כאבים ומתחים באיזור זה. העיסוי מאפשר שחרור השרירים, הפגת כאבים והרפייה',

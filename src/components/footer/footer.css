@@ -57,6 +57,18 @@ hr.style-hr::after {
   left: 50%;
   transform: translate(-50%, -50%) rotate(60deg);
   transform-origin: 50% 50%;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #111;
+}
+
+#getAWidgetLink {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 992px) {
+  .about-footer .row .col-lg-6:first-of-type {
+    border-right: none;
+  }
 }

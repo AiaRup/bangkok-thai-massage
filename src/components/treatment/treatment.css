@@ -1,29 +1,5 @@
 /* Treatment */
 
-.section-header {
-  color: #b99769;
-  padding: 35px 0;
-  font-weight: bold;
-}
-
-.section-header span {
-  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
-}
-
-.line-on-sides:before,
-.line-on-sides:after {
-  content: '';
-  display: inline-block;
-  width: 4%;
-  margin: 0 0.3em 0 -45%;
-  vertical-align: middle;
-  border-bottom: 2px solid;
-}
-
-.line-on-sides:after {
-  margin: 0 -45% 0 0.3em;
-}
-
 .treatment-name {
   color: #01095c;
   padding: 5px 0;
@@ -131,4 +107,22 @@
 
 .price-option:last-child {
   border-bottom: none;
+}
+
+.treat-data {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (max-width: 992px) {
+  #treatments .col-lg-4 {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 576px) {
+  .treat-data {
+    font-size: 20px;
+    line-height: 35px;
+  }
 }

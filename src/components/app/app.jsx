@@ -4,7 +4,7 @@ import Gallery from '../gallery/gallery';
 import Treatments from '../treatment/treatments';
 import Contact from '../contact/contact';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { Switch, Route } from 'react-router';
+import { Switch, Route, Redirect } from 'react-router';
 import './app.css';
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
           <Route exact path="/About" component={About} />
           <Route exact path="/Contact" component={Contact} />
           <Route exact path="/Gallery" component={Gallery} />
+          <Route render={() => <Redirect to="/" />} />
         </Switch>
         <div className="copyRights">
           <span>ARupsom &copy; {new Date().getFullYear()}</span>

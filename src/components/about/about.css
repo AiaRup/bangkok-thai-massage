@@ -3,11 +3,38 @@
 .header {
   width: 100%;
   height: 70vh;
+  background: #000;
 }
 
-.content-about {
-  background-color: #01095c;
+.box-gallery {
+  height: 70vh;
 }
+
+.box-gallery .bg-img::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+.box-gallery .bg-img {
+  position: relative;
+  display: inline-block;
+}
+
+.box-gallery .bg-img img {
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+/* .content-about {
+  background-color: #01095c;
+} */
 
 .data-about {
   background-color: #fafafa;
@@ -43,4 +70,14 @@
 .data-about .container .row p {
   color: #b99769;
   font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .data-about div {
+    font-size: 1.2rem;
+  }
+
+  .tel-number {
+    max-width: 280px;
+  }
 }

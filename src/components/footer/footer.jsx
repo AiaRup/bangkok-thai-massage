@@ -2,11 +2,23 @@ import React from 'react';
 import Map from '../contact/map';
 import './footer.css';
 
+const createWidgwt = (d, s, id) => {
+  let js,
+    fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s);
+  js.id = id;
+  js.src =
+    'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2185310';
+  fjs.parentNode.insertBefore(js, fjs);
+};
+
 const Footer = () => {
+  createWidgwt(document, 'script', 'moovit-jsw');
   return (
     <footer className="about-footer">
       <div className="row py-3">
-        <div className="col-lg-6">
+        <div className="col-lg">
           <h3>צרו קשר</h3>
           <hr className="style-hr" />
           <p>
@@ -30,7 +42,7 @@ const Footer = () => {
             </a>
           </p>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg">
           <h3>בקרו אותנו</h3>
           <hr className="style-hr" />
           <p>
@@ -40,13 +52,20 @@ const Footer = () => {
           <p>61 Pinsker St. Tel-Aviv</p>
         </div>
       </div>
-      <div className="row">
-        <div className="col">
+      <div className="row py-3">
+        <div className="col-lg p-3">
           <Map
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
             loadingElement={<div style={{ height: '100%' }} />}
-            containerElement={<div style={{ height: '250px' }} />}
+            containerElement={<div style={{ height: '320px' }} />}
             mapElement={<div style={{ height: '100%' }} />}
+          />
+        </div>
+        <div className="col-lg p-3">
+          <div
+            className="mv-gd-widget-20"
+            data-width="100%"
+            data-height="100%"
           />
         </div>
       </div>

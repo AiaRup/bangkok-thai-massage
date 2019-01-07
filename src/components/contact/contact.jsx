@@ -9,15 +9,7 @@ const Contact = () => {
       <Navbar transperant={false} />
       <div className="container-fluid px-0">
         <div className="row">
-          <div className="col-lg-6 px-0">
-            <Map
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
-              loadingElement={<div style={{ height: '100%' }} />}
-              containerElement={<div style={{ height: '720px' }} />}
-              mapElement={<div style={{ height: '100%' }} />}
-            />
-          </div>
-          <div className="col-lg-6 contact-data">
+          <div className="col-lg contact-data">
             <h1 className="section-header english line-on-sides">
               Contact | <span>צרו קשר</span>
             </h1>
@@ -52,25 +44,33 @@ const Contact = () => {
               שעות פעילות:
             </p>
             <div className="row">
-              <div className="col-lg-4">
-                <p>
-                  <u dir="rtl">שבת:</u>
-                </p>
-                <p> 12:00 - 20:00</p>
-              </div>
-              <div className="col-lg-4">
-                <p>
-                  <u dir="rtl">שישי:</u>
-                </p>
-                <p> 10:00 - 18:00</p>
-              </div>
-              <div className="col-lg-4">
+              <div className="col-lg order-lg-last">
                 <p>
                   <u dir="rtl">ראשון-חמישי:</u>
                 </p>
                 <p> 10:00 - 21:00</p>
               </div>
+              <div className="col-lg">
+                <p>
+                  <u dir="rtl">שישי:</u>
+                </p>
+                <p> 10:00 - 18:00</p>
+              </div>
+              <div className="col-lg order-lg-first">
+                <p>
+                  <u dir="rtl">שבת:</u>
+                </p>
+                <p> 12:00 - 20:00</p>
+              </div>
             </div>
+          </div>
+          <div className="col-lg px-0 order-lg-first">
+            <Map
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
+              loadingElement={<div style={{ height: '100%' }} />}
+              containerElement={<div style={{ height: '720px' }} />}
+              mapElement={<div style={{ height: '100%' }} />}
+            />
           </div>
         </div>
       </div>
