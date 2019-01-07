@@ -130,13 +130,17 @@ a:hover {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 10px auto;
+  margin: 20px auto;
   line-height: 40px;
 }
 
 .about-footer a:hover {
   text-decoration: none;
   color: #d1cccc;
+}
+
+.about-footer .row .col-lg-6:first-of-type {
+  border-right: 1px solid #333;
 }
 
 /* Navbar */
@@ -355,6 +359,88 @@ a:hover {
 .carousel-control-prev,
 .carousel-control-next {
   cursor: pointer;
+}
+
+/* map */
+
+.info-window {
+  width: 50px;
+  height: 50px;
+}
+
+.gm-style .gm-style-iw + button {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.gm-style .gm-style-iw {
+  background-color: #01095c;
+}
+
+/* Flaired edges, by Tomas Theunissen */
+/*
+hr.style-seven {
+  overflow: visible;
+  height: 30px;
+  border-style: solid;
+  border-color: #9d9d9d;
+  border-width: 1px 0 0 0;
+  border-radius: 20px;
+}
+hr.style-seven:before {
+  display: block;
+  content: '';
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: #9d9d9d;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+} */
+/*
+hr {
+  margin: 1.5em 0;
+  text-align: center;
+  border: none;
+}
+
+hr:before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #eee;
+  margin: 0 0.4em;
+}
+
+hr:after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #eee;
+  margin: 0 0.4em;
+} */
+
+hr.style-hr {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #bcbdae, #111, #bcbdae);
+  width: 60%;
+  margin-bottom: 30px;
+}
+hr.style-hr::after {
+  content: '§';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: #111;
 }
 
 /* @media (max-width: 767px) {

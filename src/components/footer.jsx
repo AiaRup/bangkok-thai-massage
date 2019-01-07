@@ -8,6 +8,7 @@ class Footer extends Component {
         <div className="row py-3">
           <div className="col-lg-6">
             <h3>צרו קשר</h3>
+            <hr className="style-hr" />
             <p>
               <i className="fa fa-phone mr-3" aria-hidden="true" />
               03-7448862
@@ -30,16 +31,21 @@ class Footer extends Component {
             </p>
           </div>
           <div className="col-lg-6">
-            <h3>הכתובת שלנו</h3>
+            <h3>בקרו אותנו</h3>
+            <hr className="style-hr" />
             <p>
               <i className="fa fa-map-marker mr-3" aria-hidden="true" />
               פינסקר 61, תל אביב
             </p>
             <p>61 Pinsker St. Tel-Aviv</p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
             <Map
-              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
+              googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
               loadingElement={<div style={{ height: '100%' }} />}
-              containerElement={<div style={{ height: '150px' }} />}
+              containerElement={<div style={{ height: '250px' }} />}
               mapElement={<div style={{ height: '100%' }} />}
             />
           </div>

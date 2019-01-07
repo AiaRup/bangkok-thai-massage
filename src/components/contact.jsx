@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Map from './map';
 import Navbar from './navbar';
-import Footer from './footer';
 
 class Contact extends Component {
   render() {
@@ -12,7 +11,7 @@ class Contact extends Component {
           <div className="row">
             <div className="col-lg-6 px-0">
               <Map
-                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
+                googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
                 loadingElement={<div style={{ height: '100%' }} />}
                 containerElement={<div style={{ height: '700px' }} />}
                 mapElement={<div style={{ height: '100%' }} />}
