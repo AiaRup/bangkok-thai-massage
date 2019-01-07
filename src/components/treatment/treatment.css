@@ -1,0 +1,134 @@
+/* Treatment */
+
+.section-header {
+  color: #b99769;
+  padding: 35px 0;
+  font-weight: bold;
+}
+
+.section-header span {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.line-on-sides:before,
+.line-on-sides:after {
+  content: '';
+  display: inline-block;
+  width: 4%;
+  margin: 0 0.3em 0 -45%;
+  vertical-align: middle;
+  border-bottom: 2px solid;
+}
+
+.line-on-sides:after {
+  margin: 0 -45% 0 0.3em;
+}
+
+.treatment-name {
+  color: #01095c;
+  padding: 5px 0;
+}
+
+.treatment-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.price-button {
+  background-color: #01095c;
+}
+
+/* Prices */
+
+.card {
+  border: none;
+}
+.price-card {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.card-header {
+  background-color: #f6f6f6;
+  padding: 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body ul {
+  margin: 0;
+}
+
+.bg-heading {
+  transition: all 0.3s ease-in-out 0s;
+  border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
+  border-style: solid;
+  border-width: 90px 1411px 23px 399px;
+  position: absolute;
+}
+
+.header-price-name {
+  padding: 30px 20px 10px 20px;
+  position: relative;
+  z-index: 1;
+}
+.header-price-name span {
+  font-family: 'Courgette', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+  color: #525252;
+}
+
+.price-tag {
+  margin-top: 40px;
+}
+
+.shekel-sign {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.header-price {
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 60px;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.header-min {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  vertical-align: bottom;
+}
+
+.price-option {
+  border-bottom: 1px solid #494a5a;
+  padding: 0px;
+  margin: 0px;
+  height: 52px;
+  line-height: 52px;
+  background-color: #2b2937;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+.price-option:last-child {
+  border-bottom: none;
+}

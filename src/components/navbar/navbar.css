@@ -1,0 +1,45 @@
+/* Navbar */
+
+.navbar {
+  padding: 1rem 1rem;
+  width: 100%;
+  color: white !important;
+  z-index: 999;
+}
+
+.navbar.transperant {
+  background-color: transparent;
+}
+
+.navbar.black-nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+
+.nav-link,
+.nav-item {
+  color: white;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.nav-link:hover {
+  color: #b99769;
+}
+
+.activeLink {
+  border-bottom: 1px solid #b99769;
+  color: #b99769;
+}
+
+/* toggle icon */
+
+.navbar-toggler:hover {
+  background-color: #fff;
+  color: #01095c;
+}
+
+.navbar-toggler {
+  color: #fff;
+  font-size: 20px;
+}

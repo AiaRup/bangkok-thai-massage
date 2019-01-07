@@ -4,9 +4,8 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/js/src/collapse.js';
 import 'font-awesome/css/font-awesome.css';
-import './css/styles.css';
 
-import App from './components/app';
+import App from './components/app/app';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

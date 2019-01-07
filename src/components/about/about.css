@@ -1,0 +1,46 @@
+/* About */
+
+.header {
+  width: 100%;
+  height: 70vh;
+}
+
+.content-about {
+  background-color: #01095c;
+}
+
+.data-about {
+  background-color: #fafafa;
+  min-height: 300px;
+}
+
+.data-about div {
+  color: #8c8c8c;
+  /* margin: 30px auto 0; */
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.tel-number {
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  background-color: #b99769;
+  color: #fafafa;
+  text-align: center;
+  padding: 10px;
+  border: #b99769 2px solid;
+}
+
+.tel-number:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+  border: #b99769 2px solid;
+  color: #b99769;
+  text-decoration: none;
+}
+
+.data-about .container .row p {
+  color: #b99769;
+  font-weight: bold;
+}

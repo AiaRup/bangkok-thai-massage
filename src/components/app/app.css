@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+/* GENERAL */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body,
+#root,
+.App {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  background-color: #fafafa;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.english {
+  font-family: 'Courgette', cursive;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+section > div {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Copy rights */
+
+.copyRights {
+  padding: 0 50px;
+  line-height: 60px;
+  background-color: #000;
+  color: #9d9d9d;
+  font-size: 13px;
+  text-align: center;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* @media (max-width: 767px) {
+  .navbar-nav li a {
+    display: inline;
+  }
+  .navbar-nav li {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .navbar-right li {
+    text-align: right;
+    padding: 2px;
+  }
+  .navbar-right li.mr-3 {
+    margin-right: 0 !important;
+  }
+  .navbar-nav li.ml-3 {
+    margin-left: 0 !important;
+  }
+} */
