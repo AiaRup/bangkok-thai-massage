@@ -1,6 +1,5 @@
 import React from 'react';
-import BackgroudLogo from '../../images/logo-bm.jpg';
-import Navbar from '../navbar/navbar';
+// import BackgroudLogo from '../../images/logo-bm.jpg';
 import Footer from '../footer/footer';
 
 import BackgroundSlideshow from 'react-background-slideshow';
@@ -11,7 +10,7 @@ import image2 from '../../images/homeBackground/back2.jpg';
 import image3 from '../../images/homeBackground/back3.jpg';
 import image4 from '../../images/homeBackground/back4.jpg';
 import image5 from '../../images/homeBackground/back5.jpg';
-import image6 from '../../images/homeBackground/back6.jpg';
+import image6 from '../../images/homeBackground/staff-resize.jpg';
 import image7 from '../../images/homeBackground/back7.jpg';
 
 // const styles = {
@@ -25,12 +24,10 @@ import image7 from '../../images/homeBackground/back7.jpg';
 const About = () => {
   return (
     <section className="content-about">
-      {/* <header className="header" style={styles}> */}
       <header className="header">
         <BackgroundSlideshow
           images={[image1, image2, image3, image4, image5, image6, image7]}
         />
-        <Navbar transperant={false} />
       </header>
       <content>
         <div className="data-about">

@@ -1,8 +1,12 @@
 /* Contact */
 
-#contact > .container-fluid > .row {
-  min-height: 100vh;
+#contact {
+  background: #111;
+  color: #666666;
+  font-size: 18px;
+  min-height: calc(100vh - 60px);
 }
+
 .contact-heading {
   color: #b99769;
   font-size: 25px;
@@ -10,15 +14,23 @@
 }
 
 .contact-data {
-  background: #111;
-  color: #666666;
   font-size: 18px;
-  padding: 70px 0;
+  padding-top: 80px;
 }
 
-#contact p > i {
+#contact p > i,
+.opening-hours i {
   font-size: 16px;
   color: #bcbdae;
+}
+
+.opening-hours {
+  color: #9d9d9d;
+  font-weight: bold;
+  padding: 30px 0;
+}
+.opening-hours span {
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 /* Map */

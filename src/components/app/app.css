@@ -30,13 +30,26 @@ body,
   margin-right: 0;
 }
 
-section > div {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
 a:hover {
   text-decoration: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+a,
+button,
+input,
+label,
+select,
+textarea {
+  touch-action: manipulation;
 }
 
 .section-header {
@@ -63,6 +76,14 @@ a:hover {
   margin: 0 -45% 0 0.3em;
 }
 
+.page-main-inner {
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  overflow-y: scroll;
+}
+
 /* Copy rights */
 
 .copyRights {
@@ -73,10 +94,6 @@ a:hover {
   font-size: 13px;
   text-align: center;
   height: 60px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 

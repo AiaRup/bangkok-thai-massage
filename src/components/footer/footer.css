@@ -4,8 +4,7 @@
   background: #111;
   color: #666666;
   line-height: 1.5;
-  font-size: 1.3rem;
-  padding: 90px 60px;
+  padding: 70px 60px 30px;
   font-size: 18px;
 }
 
@@ -27,7 +26,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 10px;
   line-height: 40px;
 }
 
@@ -70,5 +69,12 @@ hr.style-hr::after {
 @media (max-width: 992px) {
   .about-footer .row .col-lg-6:first-of-type {
     border-right: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-footer {
+    padding: 40px 10px 30px;
+    font-size: 16px;
   }
 }

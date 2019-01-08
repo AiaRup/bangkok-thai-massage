@@ -32,10 +32,6 @@
   height: auto;
 }
 
-/* .content-about {
-  background-color: #01095c;
-} */
-
 .data-about {
   background-color: #fafafa;
   min-height: 300px;
@@ -43,7 +39,6 @@
 
 .data-about div {
   color: #8c8c8c;
-  /* margin: 30px auto 0; */
   font-size: 1.5rem;
   line-height: 1.4;
 }

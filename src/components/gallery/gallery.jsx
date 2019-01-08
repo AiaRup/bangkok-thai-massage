@@ -3,7 +3,6 @@ import { UncontrolledCarousel } from 'reactstrap';
 import background from '../../images/header-image.jpg';
 import staff from '../../images/staff-image.jpg';
 import bed from '../../images/bed-image.jpg';
-import Navbar from '../navbar/navbar';
 import Footer from '../footer/footer';
 import './gallery.css';
 
@@ -31,10 +30,29 @@ const items = [
 const Gallery = () => {
   return (
     <section id="gallery">
-      <Navbar transperant={false} />
-      <div className="container">
-        <UncontrolledCarousel items={items} />
+      <div className="image-container">
+        <div className="image-box">
+          <div className="img-wrapper">
+            <img src={items[0].src} alt="" />
+          </div>
+          <div className="img-details">
+            <div className="img-content">
+              <p>{items[0].header}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="image-box" />
+        <div className="image-box" />
+        <div className="image-box" />
+        <div className="image-box" />
+        <div className="image-box" />
+        <div className="image-box" />
+        <div className="image-box" />
       </div>
+      {/* <div className="container pb-5">
+        <UncontrolledCarousel items={items} />
+      </div> */}
       <Footer />
     </section>
   );
