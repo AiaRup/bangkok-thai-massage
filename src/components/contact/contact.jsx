@@ -15,11 +15,17 @@ const Contact = () => {
               </h1>
             </div>
             <p>
-              03-7448862
+              <a href="tel:+9723-7448862" className="contact-link">
+                03-7448862
+              </a>
               <i className="fa fa-phone ml-3" aria-hidden="true" />
             </p>
             <p>
-              bangkokthaimassage61@gmail.com
+              <a
+                href="mailto:bangkokthaimassage61@gmail.com"
+                className="contact-link">
+                bangkokthaimassage61@gmail.com
+              </a>
               <i className="fa fa-envelope ml-3" aria-hidden="true" />
             </p>
             <div className="row mb-3 justify-content-center">

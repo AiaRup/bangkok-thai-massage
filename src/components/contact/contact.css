@@ -7,11 +7,19 @@
   min-height: calc(100vh - 60px);
 }
 
-.contact-heading {
+.contact-link {
+  color: #666666;
+}
+
+.contact-link:hover {
+  color: #bcbdae;
+}
+
+/* .contact-heading {
   color: #b99769;
   font-size: 25px;
   text-shadow: 2px 1px 2px #a1a4a4;
-}
+} */
 
 .contact-data {
   font-size: 18px;
@@ -29,6 +37,7 @@
   font-weight: bold;
   padding: 30px 0;
 }
+
 .opening-hours span {
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }

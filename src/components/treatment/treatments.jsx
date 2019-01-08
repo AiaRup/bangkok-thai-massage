@@ -13,10 +13,6 @@ const Treatments = () => {
             <span className="he"> הטיפולים שלנו</span>
           </h1>
         </div>
-        {/* <div className="section-header line-on-sides">
-          <h1>הטיפולים שלנו</h1>
-          <h1 className="english">Our Treatments</h1>
-        </div> */}
         <div className="row">
           {treatments.map((t, index) => (
             <Treatment

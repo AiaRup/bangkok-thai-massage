@@ -23,11 +23,17 @@ const Footer = () => {
           <hr className="style-hr" />
           <p>
             <i className="fa fa-phone mr-3" aria-hidden="true" />
-            03-7448862
+            <a href="tel:+9723-7448862" className="contact-link">
+              03-7448862
+            </a>
           </p>
           <p>
             <i className="fa fa-envelope mr-3" aria-hidden="true" />
-            bangkokthaimassage61@gmail.com
+            <a
+              href="mailto:bangkokthaimassage61@gmail.com"
+              className="contact-link">
+              bangkokthaimassage61@gmail.com
+            </a>
           </p>
           <div className="row mb-3 justify-content-center">
             <p className="footer-icon">
