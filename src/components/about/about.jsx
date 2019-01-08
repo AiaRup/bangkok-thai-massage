@@ -32,10 +32,13 @@ const About = () => {
       <content>
         <div className="data-about">
           <div className="container py-3">
-            <h1 className="section-header english line-on-sides">
-              About Us | <span>אודותינו</span>
-            </h1>
-            <div dir="rtl">
+            <div className="line-on-sides section-header ">
+              <h1 className="english">
+                About Us <br />
+                <span className="he"> אודותינו</span>
+              </h1>
+            </div>
+            <div dir="rtl" className="about-details">
               בנגקוק תאי מסאז' הינו המקום המושלם להירגע ולהתפנק.
               <br />
               צוות המעסים שלנו מורכב כולו מתאילנדים מקצועיים, שהוסמכו בתאילנד

@@ -30,6 +30,12 @@ const items = [
 const Gallery = () => {
   return (
     <section id="gallery">
+      <div className="line-on-sides section-header ">
+        <h1 className="english">
+          Gallery <br />
+          <span className="he"> גלריה</span>
+        </h1>
+      </div>
       <div className="image-container">
         <div className="image-box">
           <div className="img-wrapper">

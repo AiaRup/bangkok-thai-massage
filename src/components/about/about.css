@@ -37,7 +37,7 @@
   min-height: 300px;
 }
 
-.data-about div {
+.about-details {
   color: #8c8c8c;
   font-size: 1.5rem;
   line-height: 1.4;
@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 992px) {
-  .data-about div {
+  .about-details {
     font-size: 1.2rem;
   }
 

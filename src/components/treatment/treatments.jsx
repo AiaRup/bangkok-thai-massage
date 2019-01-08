@@ -7,9 +7,16 @@ const Treatments = () => {
   return (
     <section id="treatments">
       <div className="container px-3">
-        <h1 className="section-header english line-on-sides">
-          Our Treatments | <span>הטיפולים שלנו</span>
-        </h1>
+        <div className="line-on-sides section-header ">
+          <h1 className="english">
+            Our Treatments <br />
+            <span className="he"> הטיפולים שלנו</span>
+          </h1>
+        </div>
+        {/* <div className="section-header line-on-sides">
+          <h1>הטיפולים שלנו</h1>
+          <h1 className="english">Our Treatments</h1>
+        </div> */}
         <div className="row">
           {treatments.map((t, index) => (
             <Treatment

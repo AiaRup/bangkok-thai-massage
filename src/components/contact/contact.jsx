@@ -8,9 +8,12 @@ const Contact = () => {
       <div className="container-fluid px-0">
         <div className="row">
           <div className="col-lg contact-data">
-            <h1 className="section-header english line-on-sides">
-              Contact | <span>צרו קשר</span>
-            </h1>
+            <div className="line-on-sides section-header ">
+              <h1 className="english">
+                Contact <br />
+                <span className="he"> צרו קשר</span>
+              </h1>
+            </div>
             <p>
               03-7448862
               <i className="fa fa-phone ml-3" aria-hidden="true" />

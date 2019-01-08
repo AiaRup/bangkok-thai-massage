@@ -2,13 +2,14 @@
 
 #gallery {
   background-color: #262626;
+  padding-top: 100px;
 }
 
 .image-container {
   width: 90%;
   max-width: 1160px;
   margin: 0 auto;
-  padding: 100px 30px;
+  padding: 10px 30px;
   min-height: 500px;
   display: flex;
   flex-direction: row;
@@ -57,9 +58,9 @@
 
 .image-container .image-box .img-details .img-content {
   color: white;
-  position: absolute;
+  position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  transform: perspective(1px) translateY(-50%);
   text-align: center;
   padding: 15px;
   width: 100%;
