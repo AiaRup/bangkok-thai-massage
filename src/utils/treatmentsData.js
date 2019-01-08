@@ -1,6 +1,6 @@
 import oilImage from '../images/oil-image.jpg';
-import footImage from '../images/foot-image.jpg';
-import stonesImage from '../images/stones-image.jpg';
+import footImage from '../images/treatments/foot-massage.jpg';
+import stonesImage from '../images/treatments/stones-massage.jpg';
 import backImage from '../images/back-image.jpg';
 
 export const treatments = [

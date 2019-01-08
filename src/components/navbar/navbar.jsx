@@ -2,12 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
-const Navbar = ({ transperant }) => {
-  const classes = transperant
-    ? 'nav navbar navbar-expand-md transperant'
-    : 'nav navbar navbar-expand-md black-nav';
+const Navbar = () => {
   return (
-    <nav className={classes}>
+    <nav className="nav navbar navbar-expand-md black-nav">
       <button
         className="navbar-toggler"
         type="button"

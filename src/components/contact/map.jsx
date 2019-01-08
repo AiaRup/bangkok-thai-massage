@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+
 import React from 'react';
 import {
   GoogleMap,
@@ -14,7 +16,7 @@ const MapComponent = withScriptjs(
       <div>
         <GoogleMap
           defaultCenter={{ lat: 32.07699, lng: 34.77289 }}
-          zoom={16}
+          zoom={15}
           defaultOptions={{
             mapTypeControl: false,
             rotateControl: false,
@@ -22,6 +24,10 @@ const MapComponent = withScriptjs(
             fullscreenControl: false,
             disableDoubleClickZoom: false,
             streetViewControl: false,
+            zoomControl: true,
+            zoomControlOptions: {
+              position: google.maps.ControlPosition.LEFT_BOTTOM
+            },
             styles: mapStyle
           }}>
           <InfoWindow position={{ lat: 32.07699, lng: 34.77289 }}>

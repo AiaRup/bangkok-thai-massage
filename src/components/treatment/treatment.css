@@ -1,7 +1,13 @@
 /* Treatment */
 
+#treatments .container,
+#gallery .container {
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+
 .treatment-name {
-  color: #01095c;
+  color: #2b2937;
   padding: 5px 0;
 }
 
@@ -10,10 +16,6 @@
   height: 180px;
   border-radius: 50%;
   margin-bottom: 10px;
-}
-
-.price-button {
-  background-color: #01095c;
 }
 
 /* Prices */
@@ -112,6 +114,7 @@
 .treat-data {
   font-size: 18px;
   line-height: 28px;
+  color: #8c8c8c;
 }
 
 @media (max-width: 992px) {

@@ -1,6 +1,5 @@
 import React from 'react';
-import BackgroudLogo from '../../images/logo-bm.jpg';
-import Navbar from '../navbar/navbar';
+// import BackgroudLogo from '../../images/logo-bm.jpg';
 import Footer from '../footer/footer';
 
 import BackgroundSlideshow from 'react-background-slideshow';
@@ -11,7 +10,7 @@ import image2 from '../../images/homeBackground/back2.jpg';
 import image3 from '../../images/homeBackground/back3.jpg';
 import image4 from '../../images/homeBackground/back4.jpg';
 import image5 from '../../images/homeBackground/back5.jpg';
-import image6 from '../../images/homeBackground/back6.jpg';
+import image6 from '../../images/homeBackground/staff-resize.jpg';
 import image7 from '../../images/homeBackground/back7.jpg';
 
 // const styles = {
@@ -25,20 +24,21 @@ import image7 from '../../images/homeBackground/back7.jpg';
 const About = () => {
   return (
     <section className="content-about">
-      {/* <header className="header" style={styles}> */}
       <header className="header">
         <BackgroundSlideshow
           images={[image1, image2, image3, image4, image5, image6, image7]}
         />
-        <Navbar transperant={false} />
       </header>
       <content>
         <div className="data-about">
           <div className="container py-3">
-            <h1 className="section-header english line-on-sides">
-              About Us | <span>אודותינו</span>
-            </h1>
-            <div dir="rtl">
+            <div className="line-on-sides section-header ">
+              <h1 className="english">
+                About Us <br />
+                <span className="he"> אודותינו</span>
+              </h1>
+            </div>
+            <div dir="rtl" className="about-details">
               בנגקוק תאי מסאז' הינו המקום המושלם להירגע ולהתפנק.
               <br />
               צוות המעסים שלנו מורכב כולו מתאילנדים מקצועיים, שהוסמכו בתאילנד

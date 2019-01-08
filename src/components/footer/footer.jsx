@@ -23,24 +23,44 @@ const Footer = () => {
           <hr className="style-hr" />
           <p>
             <i className="fa fa-phone mr-3" aria-hidden="true" />
-            03-7448862
-          </p>
-          <p className="footer-icon">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.google.com/maps/place/Bangkok+thai+massage/@32.077166,34.772915,15z/data=!4m5!3m4!1s0x0:0xac58e48718ca52c!8m2!3d32.077166!4d34.772915">
-              <i className="fa fa-google" aria-hidden="true" />
+            <a href="tel:+9723-7448862" className="contact-link">
+              03-7448862
             </a>
           </p>
-          <p className="footer-icon">
+          <p>
+            <i className="fa fa-envelope mr-3" aria-hidden="true" />
             <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.facebook.com/BangkokThaiMassageTLV/">
-              <i className="fa fa-facebook" />
+              href="mailto:bangkokthaimassage61@gmail.com"
+              className="contact-link">
+              bangkokthaimassage61@gmail.com
             </a>
           </p>
+          <div className="row mb-3 justify-content-center">
+            <p className="footer-icon">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.google.com/maps/place/Bangkok+thai+massage/@32.077166,34.772915,15z/data=!4m5!3m4!1s0x0:0xac58e48718ca52c!8m2!3d32.077166!4d34.772915">
+                <i className="fa fa-google" aria-hidden="true" />
+              </a>
+            </p>
+            <p className="footer-icon">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/BangkokThaiMassageTLV/">
+                <i className="fa fa-facebook" />
+              </a>
+            </p>
+            <p className="footer-icon">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/bangkok_thai_massage/">
+                <i className="fa fa-instagram" aria-hidden="true" />
+              </a>
+            </p>
+          </div>
         </div>
         <div className="col-lg">
           <h3>בקרו אותנו</h3>
@@ -52,8 +72,8 @@ const Footer = () => {
           <p>61 Pinsker St. Tel-Aviv</p>
         </div>
       </div>
-      <div className="row py-3">
-        <div className="col-lg p-3">
+      <div className="row py-3 justify-content-center">
+        <div className="col-md px-lg-5 p-3">
           <Map
             googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&language=en,he&key=AIzaSyCl5mAkzOiDZ8dnZjdankkW92-MYxmjNw0"
             loadingElement={<div style={{ height: '100%' }} />}
@@ -61,7 +81,7 @@ const Footer = () => {
             mapElement={<div style={{ height: '100%' }} />}
           />
         </div>
-        <div className="col-lg p-3">
+        <div className="col-md px-lg-5 p-3">
           <div
             className="mv-gd-widget-20"
             data-width="100%"

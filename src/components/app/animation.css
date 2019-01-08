@@ -1,0 +1,43 @@
+/* .fade-appear,
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-appear-active,
+.fade-enter-active {
+  transition: opacity 0.3s linear;
+  opacity: 1;
+}
+
+.fade-exit {
+  transition: opacity 0.2s linear;
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+} */
+
+.fadeTranslate-enter {
+  opacity: 0;
+  transform: translate(0, -3vh);
+  position: fixed;
+}
+
+.fadeTranslate-enter.fadeTranslate-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 500ms ease-in 500ms, transform 500ms ease-in-out 500ms;
+}
+
+.fadeTranslate-exit {
+  opacity: 1;
+  position: fixed;
+  transform: translate(0, 0);
+}
+
+.fadeTranslate-exit.fadeTranslate-exit-active {
+  opacity: 0;
+  transform: translate(0, 3vh);
+  transition: opacity 300ms ease-in, transform 300ms ease-in-out;
+}

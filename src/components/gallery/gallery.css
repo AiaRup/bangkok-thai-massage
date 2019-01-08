@@ -1,5 +1,74 @@
 /* Gallery */
 
+#gallery {
+  background-color: #262626;
+  padding-top: 100px;
+}
+
+.image-container {
+  width: 90%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-container .image-box {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #ff0;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.image-container .image-box .img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container .image-box .img-wrapper img {
+  min-width: 250px;
+  max-width: 100%;
+  height: 250px;
+  transition: transform 1s;
+}
+
+.image-container .image-box:hover .img-wrapper img {
+  transform: scale(1.1);
+}
+
+.image-container .image-box .img-details {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+
+.image-container .image-box:hover .img-details {
+  transform: scaleY(1);
+}
+
+.image-container .image-box .img-details .img-content {
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+/* carousel */
+
 .carousel-item > img {
   width: 100%;
   max-height: 600px;
