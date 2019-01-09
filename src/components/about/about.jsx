@@ -1,6 +1,7 @@
 import React from 'react';
 // import BackgroudLogo from '../../images/logo-bm.jpg';
 import Footer from '../footer/footer';
+import Fade from 'react-reveal/Fade';
 
 import BackgroundSlideshow from 'react-background-slideshow';
 import './about.css';
@@ -30,44 +31,50 @@ const About = () => {
         />
       </header>
       <content>
-        <div className="data-about">
-          <div className="container py-3">
-            <div className="line-on-sides section-header ">
-              <h1 className="english">
-                About Us <br />
-                <span className="he"> אודותינו</span>
-              </h1>
-            </div>
-            <div dir="rtl" className="about-details">
-              בנגקוק תאי מסאז' הינו המקום המושלם להירגע ולהתפנק.
-              <br />
-              צוות המעסים שלנו מורכב כולו מתאילנדים מקצועיים, שהוסמכו בתאילנד
-              ועבדו שם ובישראל שנים רבות.
-              <br />
-              אתם מוזמנים להגיע ולהנות מהניסיון העשיר שלהם ולחוות עיסוי יוצא
-              דופן באיכותו.
-              <br />
-              הטיפולים המקצועיים שלנו כוללים:
-              <div className="row py-3">
-                <div className="col-lg-6">
-                  <p>עיסוי תאילנדי מסורתי</p>
-                  <p>עיסוי שמנים</p>
-                  <p>עיסוי משולב</p>
-                </div>
-                <div className="col-lg-6">
-                  <p>עיסוי כפות רגליים</p>
-                  <p>עיסוי גב | צוואר | כתפיים</p>
-                  <p>עיסוי אבנים חמות וצמחי מרפא</p>
-                </div>
+        <Fade bottom>
+          <div className="data-about">
+            <div className="container py-3">
+              <div className="line-on-sides section-header ">
+                <h1 className="english">
+                  About Us <br />
+                  <span className="he"> אודותינו</span>
+                </h1>
               </div>
-              <br />
-              אז למה אתם מחכים? התקשרו עכשיו!
-              <a className="tel-number" href="tel:+9723-7448862">
-                03-7448862
-              </a>
+              <div dir="rtl" className="about-details">
+                בנגקוק תאי מסאז' הינו המקום המושלם להירגע ולהתפנק.
+                <br />
+                צוות המעסים שלנו מורכב כולו מתאילנדים מקצועיים, שהוסמכו בתאילנד
+                ועבדו שם ובישראל שנים רבות.
+                <br />
+                אתם מוזמנים להגיע ולהנות מהניסיון העשיר שלהם ולחוות עיסוי יוצא
+                דופן באיכותו.
+                <br />
+                הטיפולים המקצועיים שלנו כוללים:
+                <Fade bottom>
+                  <div className="row py-3">
+                    <div className="col-lg-6">
+                      <p>עיסוי תאילנדי מסורתי</p>
+                      <p>עיסוי שמנים</p>
+                      <p>עיסוי משולב</p>
+                    </div>
+                    <div className="col-lg-6">
+                      <p>עיסוי כפות רגליים</p>
+                      <p>עיסוי גב | צוואר | כתפיים</p>
+                      <p>עיסוי אבנים חמות וצמחי מרפא</p>
+                    </div>
+                  </div>
+                </Fade>
+                <br />
+                <Fade bottom>
+                  אז למה אתם מחכים? התקשרו עכשיו!
+                  <a className="tel-number" href="tel:+9723-7448862">
+                    03-7448862
+                  </a>
+                </Fade>
+              </div>
             </div>
           </div>
-        </div>
+        </Fade>
       </content>
       <Footer />
     </section>

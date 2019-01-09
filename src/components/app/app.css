@@ -60,6 +60,10 @@ textarea {
   touch-action: manipulation;
 }
 
+ul {
+  padding: 0;
+}
+
 .section-header {
   color: #b99769;
   padding: 35px 0;
@@ -105,33 +109,3 @@ textarea {
     font-size: 30px;
   }
 }
-
-/* @media (max-width: 767px) {
-  .h1-seperator {
-    display: none;
-  }
-
-  .section-header {
-    grid-gap: 10px;
-  }
-} */
-
-/* @media (max-width: 767px) {
-  .navbar-nav li a {
-    display: inline;
-  }
-  .navbar-nav li {
-    text-align: center;
-    padding: 0.5rem 1rem;
-  }
-  .navbar-right li {
-    text-align: right;
-    padding: 2px;
-  }
-  .navbar-right li.mr-3 {
-    margin-right: 0 !important;
-  }
-  .navbar-nav li.ml-3 {
-    margin-left: 0 !important;
-  }
-} */
