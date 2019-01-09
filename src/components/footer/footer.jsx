@@ -1,20 +1,22 @@
 import React from 'react';
 import Map from '../contact/map';
+import Moovit from './moovitWidget';
+
 import './footer.css';
 
-const createWidgwt = (d, s, id) => {
-  let js,
-    fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src =
-    'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2185310';
-  fjs.parentNode.insertBefore(js, fjs);
-};
+// const createWidgwt = (d, s, id) => {
+//   let js,
+//     fjs = d.getElementsByTagName(s)[0];
+//   if (d.getElementById(id)) return;
+//   js = d.createElement(s);
+//   js.id = id;
+//   js.src =
+//     'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2185310';
+//   fjs.parentNode.insertBefore(js, fjs);
+// };
 
 const Footer = () => {
-  createWidgwt(document, 'script', 'moovit-jsw');
+  // createWidgwt(document, 'script', 'moovit-jsw');
   return (
     <footer className="about-footer">
       <div className="row py-3">
@@ -88,6 +90,7 @@ const Footer = () => {
             data-height="100%"
           />
         </div>
+        {/* <Moovit /> */}
       </div>
     </footer>
   );
