@@ -15,12 +15,6 @@
   color: #bcbdae;
 }
 
-/* .contact-heading {
-  color: #b99769;
-  font-size: 25px;
-  text-shadow: 2px 1px 2px #a1a4a4;
-} */
-
 .contact-data {
   font-size: 18px;
   padding-top: 80px;
@@ -36,10 +30,23 @@
   color: #9d9d9d;
   font-weight: bold;
   padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.opening-hours span {
+.opening-hours i {
+  line-height: 34px;
+  height: 34px;
+}
+
+.opening-hours .he {
   font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+}
+
+.h3-seperator {
+  margin: 0 10px;
 }
 
 /* Map */
@@ -57,4 +64,20 @@
 
 .gm-style .gm-style-iw {
   background-color: #01095c;
+}
+
+@media (max-width: 576px) {
+  .contact-data,
+  #contact {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 426px) {
+  .h3-seperator {
+    display: none;
+  }
+  .opening-hours .he {
+    margin: 0 20px;
+  }
 }
