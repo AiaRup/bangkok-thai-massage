@@ -33,7 +33,7 @@
   outline: 0;
 }
 
-/* hamburger icon and close menu icon */
+/* burger icon and close menu icon */
 .navbar-toggler {
   position: relative;
 }
@@ -99,7 +99,6 @@
   }
 
   /* animate navbar on close and open */
-
   .slideup,
   .slidedown {
     max-height: 0;
