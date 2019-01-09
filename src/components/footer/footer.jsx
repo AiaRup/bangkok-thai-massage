@@ -5,19 +5,7 @@ import Fade from 'react-reveal/Fade';
 
 import './footer.css';
 
-// const createWidgwt = (d, s, id) => {
-//   let js,
-//     fjs = d.getElementsByTagName(s)[0];
-//   if (d.getElementById(id)) return;
-//   js = d.createElement(s);
-//   js.id = id;
-//   js.src =
-//     'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2185310';
-//   fjs.parentNode.insertBefore(js, fjs);
-// };
-
 const Footer = () => {
-  // createWidgwt(document, 'script', 'moovit-jsw');
   return (
     <footer className="about-footer">
       <div className="row py-3">
@@ -91,14 +79,11 @@ const Footer = () => {
             />
           </div>
         </Fade>
-        <div className="col-md px-lg-5 p-3">
-          <div
-            className="mv-gd-widget-20"
-            data-width="100%"
-            data-height="100%"
-          />
-        </div>
-        {/* <Moovit /> */}
+        <Fade bottom>
+          <div className="col-md px-lg-5 p-3">
+            <Moovit />
+          </div>
+        </Fade>
       </div>
     </footer>
   );

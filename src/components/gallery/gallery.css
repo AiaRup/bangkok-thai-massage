@@ -1,7 +1,7 @@
 /* Gallery */
 
 #gallery {
-  background-color: #262626;
+  background: #111;
   padding-top: 100px;
 }
 
@@ -65,23 +65,6 @@
   padding: 15px;
   width: 100%;
 }
-
-/* carousel */
-
-/* .carousel-item > img {
-  width: 100%;
-  max-height: 600px;
-}
-
-.carousel-item,
-.carousel-item.active {
-  align-items: center;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  cursor: pointer;
-} */
 
 @media (max-width: 690px) {
   .image-container .image-box {

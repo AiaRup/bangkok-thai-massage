@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 
 class MoovitWidget extends Component {
-  // componentWillMount = () => {
-  //   console.log('will mount');
-  //   this.createWidgwt(document, 'script', 'moovit-jsw');
-  // };
+  componentDidMount = () => {
+    console.log('will mount');
+    this.createWidgwt(document, 'script', 'moovit-jsw');
+  };
 
-  // createWidgwt = (d, s, id) => {
-  //   let js,
-  //     fjs = d.getElementsByTagName(s)[0];
-  //   if (d.getElementById(id)) return;
-  //   js = d.createElement(s);
-  //   js.id = id;
-  //   js.src =
-  //     'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2185310';
-  //   fjs.parentNode.insertBefore(js, fjs);
-  // };
+  createWidgwt = (d, s, id) => {
+    let js,
+      fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src =
+      'https://widgets.moovit.com/ws/7EDFF83D3FC1BB10E0530100007FE537/2193290';
+    fjs.parentNode.insertBefore(js, fjs);
+  };
 
   render() {
     console.log('render');

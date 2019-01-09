@@ -1,9 +1,7 @@
 import React from 'react';
-import { UncontrolledCarousel } from 'reactstrap';
 import images from '../../utils/images';
 import Footer from '../footer/footer';
 import { Roll, Fade } from 'react-reveal';
-// import Fade from 'react-reveal/Fade';
 
 import './gallery.css';
 
@@ -34,9 +32,6 @@ const Gallery = () => {
           </Roll>
         ))}
       </div>
-      {/* <div className="container pb-5">
-        <UncontrolledCarousel items={items} />
-      </div> */}
       <Footer />
     </section>
   );
