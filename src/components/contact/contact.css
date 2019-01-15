@@ -10,10 +10,16 @@
 
 .contact-link {
   color: #666666;
+  -webkit-transition: font-size 0.3s ease-in;
+  -moz-transition: font-size 0.3s ease-in;
+  -o-transition: font-size 0.3s ease-in;
+  transition: font-size 0.3s ease-in;
 }
 
 .contact-link:hover {
-  color: #bcbdae;
+  /* color: #bcbdae; */
+  color: #111;
+  font-size: 20px;
 }
 
 .contact-data {
