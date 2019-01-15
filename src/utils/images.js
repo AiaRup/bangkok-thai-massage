@@ -1,4 +1,3 @@
-import img1 from '../images/gallery/img1.jpg';
 import img2 from '../images/gallery/img2.jpg';
 import img3 from '../images/gallery/img3.jpg';
 import img4 from '../images/gallery/img4.jpg';
@@ -11,10 +10,6 @@ import img10 from '../images/gallery/img10.jpg';
 import img11 from '../images/gallery/img11.jpg';
 
 const images = [
-  {
-    src: img1,
-    header: 'Slide 1 Header'
-  },
   {
     src: img2,
     header: 'Slide 1 Header'

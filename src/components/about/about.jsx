@@ -1,35 +1,24 @@
 import React from 'react';
-// import BackgroudLogo from '../../images/logo-bm.jpg';
 import Footer from '../footer/footer';
 import Fade from 'react-reveal/Fade';
+import Slider from '../slider/slider';
 
-import BackgroundSlideshow from 'react-background-slideshow';
 import './about.css';
-
-import image1 from '../../images/homeBackground/back1.jpg';
-import image2 from '../../images/homeBackground/back2.jpg';
-import image3 from '../../images/homeBackground/back3.jpg';
-import image4 from '../../images/homeBackground/back4.jpg';
-import image5 from '../../images/homeBackground/back5.jpg';
-import image6 from '../../images/homeBackground/staff-resize.jpg';
-import image7 from '../../images/homeBackground/back7.jpg';
-
-// const styles = {
-//   background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-//     url('${BackgroudLogo}')`,
-//   backgroundSize: 'contain',
-//   backgroundRepeat: 'no-repeat, no-repeat',
-//   backgroundPosition: 'center, right 30% bottom 45%'
-// };
 
 const About = () => {
   return (
-    <section className="content-about">
-      <header className="header">
-        <BackgroundSlideshow
-          images={[image1, image2, image3, image4, image5, image6, image7]}
-        />
-      </header>
+    <section id="about">
+      <Fade bottom>
+        <header className="header__main">
+          <h1 className="main-headline">
+            <span className="english">Bangkok Thai Massage</span>
+          </h1>
+          <Slider />
+          <h1 className="second-headline" dir="rtl">
+            בואו להנות מחווית עיסוי בלתי נשכחת!
+          </h1>
+        </header>
+      </Fade>
       <content>
         <Fade bottom>
           <div className="data-about">

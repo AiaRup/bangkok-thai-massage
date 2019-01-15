@@ -1,12 +1,13 @@
 /* Gallery */
 
 #gallery {
-  background: #111;
+  /* background: #111; */
+  background-color: #fafafa;
   padding-top: 100px;
 }
 
 .image-container {
-  width: 90%;
+  width: 95%;
   max-width: 1160px;
   margin: 0 auto;
   padding: 10px 30px;

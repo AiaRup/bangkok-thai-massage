@@ -23,11 +23,11 @@ const Gallery = () => {
               <div className="img-wrapper">
                 <img src={img.src} alt="" />
               </div>
-              <div className="img-details">
+              {/* <div className="img-details">
                 <div className="img-content">
                   <p>{img.header}</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Roll>
         ))}

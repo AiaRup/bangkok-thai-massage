@@ -66,7 +66,7 @@ ul {
 
 .section-header {
   color: #b99769;
-  padding: 35px 0;
+  padding: 15px 0;
   font-weight: bold;
   display: grid;
   width: fit-content;
@@ -104,8 +104,8 @@ ul {
   width: 100%;
 }
 
-@media (max-width: 992px) {
-  .section-header {
+@media (max-width: 620px) {
+  .section-header h1 {
     font-size: 30px;
   }
 }

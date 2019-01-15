@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class MoovitWidget extends Component {
   componentDidMount = () => {
-    console.log('will mount');
     this.createWidgwt(document, 'script', 'moovit-jsw');
   };
 
@@ -18,13 +17,10 @@ class MoovitWidget extends Component {
   };
 
   render() {
-    console.log('render');
     // this.createWidgwt(document, 'script', 'moovit-jsw');
 
     return (
-      <div className="col-md px-lg-5 p-3">
-        <div className="mv-gd-widget-20" data-width="100%" data-height="100%" />
-      </div>
+      <div className="mv-gd-widget-20" data-width="100%" data-height="100%" />
     );
   }
 }

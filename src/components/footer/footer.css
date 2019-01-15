@@ -30,6 +30,13 @@
   line-height: 40px;
 }
 
+#contact .footer-icon:hover {
+  background-color: #111;
+}
+#contact .footer-icon a:hover {
+  color: #9d9d9d;
+}
+
 .about-footer a:hover {
   text-decoration: none;
   color: #d1cccc;
@@ -60,11 +67,11 @@ hr.style-hr::after {
   background-color: #111;
 }
 
-#getAWidgetLink {
+/* #getAWidgetLink {
   display: none;
   visibility: hidden;
   opacity: 0;
-}
+} */
 
 @media (max-width: 992px) {
   .about-footer .row .col-lg-6:first-of-type {

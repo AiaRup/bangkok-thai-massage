@@ -1,0 +1,152 @@
+.header-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  position: absolute;
+  height: 300px;
+  min-width: 800px;
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  margin: -220px 0 0 -400px;
+}
+
+.slider-wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.slide-inner {
+  height: calc(100% - 50px);
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.inner-left {
+  clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
+  margin-right: -50px;
+}
+
+.inner-right {
+  clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%);
+  margin-left: -50px;
+  margin-bottom: -40px;
+}
+
+/* .slider .slide {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+} */
+
+.slide__bg {
+  -webkit-filter: blur(40px);
+  filter: blur(40px);
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease;
+  will-change: opacity;
+}
+
+.backArrow,
+.nextArrow {
+  color: #8c8c8c;
+  font-size: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.backArrow {
+  left: -45px;
+}
+.nextArrow {
+  right: -45px;
+}
+
+.nextArrow i,
+.backArrow i {
+  line-height: 30px;
+}
+
+@media (max-width: 950px) {
+  .slider {
+    min-width: 500px;
+    margin: -220px 0 0 -250px;
+  }
+  .inner-right {
+    margin-left: -30px;
+  }
+  .inner-left {
+    margin-right: -30px;
+  }
+  .backArrow {
+    left: -35px;
+  }
+  .nextArrow {
+    right: -35px;
+  }
+}
+
+@media (max-width: 620px) {
+  /* .slider {
+    min-width: 300px;
+    margin: -220px 0 0 -150px;
+  } */
+  /* .inner-right {
+    margin-left: -20px;
+  }
+  .inner-left {
+    margin-right: -20px;
+  } */
+  .backArrow,
+  .nextArrow {
+    top: 100%;
+  }
+
+  .backArrow {
+    left: 40%;
+  }
+  .nextArrow {
+    right: 40%;
+  }
+}
+
+@media (max-width: 476px) {
+  .slider {
+    min-width: 400px;
+    margin: -220px 0 0 -200px;
+  }
+  .inner-right {
+    margin-left: -20px;
+  }
+  .inner-left {
+    margin-right: -20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider {
+    min-width: 350px;
+    margin: -220px 0 0 -175px;
+  }
+}
